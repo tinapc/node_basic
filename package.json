@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/index.js",
-    "sass": "node-sass -w src/resources/sass/ -o public/css/"
+    "sass": "node-sass -w src/resources/sass/ -o public/css/",
+    "tailwind": "postcss src/resources/sass/tailwind.css -o public/css/app.css"
   },
   "repository": {
     "type": "git",
@@ -24,8 +25,12 @@
   },
   "homepage": "https://github.com/tinapc/node_basic#readme",
   "dependencies": {
+    "autoprefixer": "^10.3.1",
     "express": "^4.17.1",
-    "express-handlebars": "^5.3.2"
+    "express-handlebars": "^5.3.2",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
     "morgan": "^1.10.0",

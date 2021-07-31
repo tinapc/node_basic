@@ -5,7 +5,7 @@ const port = 3000;
 const app = express();
 
 // Assets static
-app.use('/static', express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static(path.join(__dirname, '../public')));
 
 // view engine
 app.engine('hbs', hbs({
@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
         people: ['John Doe', 'Leo Messi', 'Hung Nguyen'],
     });
 });
-app.get('/product', (req, res) => {
+app.get('/blog', (req, res) => {
     res.render('product', {
         'title': 'Product detail',
         message: 'This is product page'

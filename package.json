@@ -1,0 +1,33 @@
+{
+  "name": "node_basic",
+  "version": "1.0.0",
+  "description": "nodejs, learn basic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinapc/node_basic.git"
+  },
+  "keywords": [
+    "nodejs",
+    "node",
+    "basic"
+  ],
+  "author": "Hung Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tinapc/node_basic/issues"
+  },
+  "homepage": "https://github.com/tinapc/node_basic#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
